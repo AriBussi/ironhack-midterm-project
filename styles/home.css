@@ -1,3 +1,97 @@
-h1 {
-    color: magenta;
+/* GLOBAL ______________________________ */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: 20px;
 }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: var(--max-content);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 520px) {
+    .container {
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+/* BUTTONS ______________________________ */
+.btn {
+    min-width: 150px;
+    height: 52px;
+    border: none;
+    font-family: var(--font-family);
+    font-size: .85rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* NAVIGATION ______________________________ */
+.navigation {
+    background-color: var(--neutral-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media (min-width: 520px) {
+    .navigation{
+        height: 122px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a {
+    color: var(--neutral-medium);
+    padding: 15px 5%;
+    font-size: .85rem;
+}
+
+nav a:hover,
+nav a:active {
+    color: var(--primary);
+}
+
+#logo {
+    max-width: 60px;
+    padding-top: 10px;
+} 
+
+@media (min-width: 520px) {
+    #logo {
+        padding-top: 0;
+    }
+
+    .navigation {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1110px) {
+    #logo,
+    .navigation {
+        padding: 0;
+    }
+}
+
+/* TODO: UNIFIY MEDIA QUERIES */
