@@ -4,6 +4,8 @@ body {
     margin: 0;
     font-family: var(--font-family);
     font-size: 20px;
+    background-color: var(--neutral-light);
+    height: 200vh; /* To be removed when body has content */
 }
 
 a {
@@ -17,7 +19,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1rem;
 }
 
 @media (min-width: 520px) {
@@ -29,8 +31,8 @@ a {
 
 /* BUTTONS ______________________________ */
 .btn {
-    min-width: 150px;
-    height: 52px;
+    min-width: 6.5rem;
+    height: 2.6rem;
     border: none;
     font-family: var(--font-family);
     font-size: .85rem;
@@ -39,6 +41,12 @@ a {
 .btn-primary {
     background-color: var(--primary);
     color: var(--white);
+}
+
+@media (min-width: 520px) {
+    .btn {
+        min-width: 7.5rem;
+    }
 }
 
 /* NAVIGATION ______________________________ */
@@ -51,7 +59,9 @@ a {
 
 @media (min-width: 520px) {
     .navigation{
-        height: 122px;
+        height: 6rem;
+        position: sticky;
+        top: -3rem;
     }
 }
 
@@ -63,7 +73,7 @@ nav {
 
 nav a {
     color: var(--neutral-medium);
-    padding: 15px 5%;
+    padding: .75rem 1.5rem;
     font-size: .85rem;
 }
 
@@ -94,4 +104,8 @@ nav a:active {
     }
 }
 
-/* TODO: UNIFIY MEDIA QUERIES */
+/* 
++++ TODO
+- UNIFIY MEDIA QUERIES 
+- BTNS HOVER STATE
+*/
