@@ -11,8 +11,8 @@
 }
 
 .navigation .container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 @media (min-width: 800px) {
@@ -41,7 +41,6 @@ nav a:active {
 }
 
 #logo {
-    max-width: 3rem;
     padding-top: .5rem;
 } 
 
@@ -59,9 +58,9 @@ nav a:active {
 }
 
 /* HERO ______________________________ */
-.hero-info {
+/* .hero-info {
     margin-top: 140px;
-}
+} */
 
 .hero-info p {
     margin: 2rem 0;
@@ -73,10 +72,13 @@ nav a:active {
 
 .hero-image {
     background-image: url(../assets/hero-section/hero-image.png);
-    min-height: 31.5rem;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     position: relative;
+    min-height: 150px;
+    min-width: 150px;
+    margin: 8.5rem auto 1rem auto;
 }
 
 .hero-card {
@@ -97,6 +99,10 @@ nav a:active {
 }
 
 @media (min-width: 800px) {
+    .hero .container {
+        flex-direction: row-reverse;
+    }
+
     .hero-image,
     .hero-info{
         width: 50%;
@@ -104,6 +110,12 @@ nav a:active {
 
     .hero-info {
         margin-top: 0;
+    }
+
+    .hero-image {
+        background-position: top;
+        min-height: 31.5rem;
+        margin: 0;
     }
 }
 

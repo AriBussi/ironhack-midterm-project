@@ -18,8 +18,8 @@ h1, p {
 
 h1 {
     color: var(--neutral-dark);
-    font-size: 2.6rem;
-    line-height: 55px;
+    font-size: 2.2rem;
+    line-height: 40px;
 }
 
 p {
@@ -27,14 +27,9 @@ p {
     line-height: 30px;
 }
 
-@media (min-width: 520px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-}
 @media (min-width: 800px) {
     h1 {
+        font-size: 3rem;
         line-height: 70px;
     }
 }
@@ -56,17 +51,11 @@ p {
     display: none;
 }
 
-/* @media (min-width: 520px) {
-    .container {
-
-    }
-} */
-
 @media (min-width: 800px) {
     .container {
         text-align: unset;
         flex-direction: row;
-        padding: 0 20px;
+        padding: 0 1rem;
     }
 }
 
@@ -81,6 +70,7 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    color: var(--neutral-medium);
     background-color: transparent;
     min-width: 6.5rem;
     height: 2.6rem;
