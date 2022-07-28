@@ -1,0 +1,91 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color: var(--neutral-light);
+    height: 200vh; /* To be removed when body has content */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* TYPOGRAPHIES ______________________________ */
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    color: var(--neutral-dark);
+    font-size: 2.2rem;
+    line-height: 40px;
+}
+
+p {
+    color: var(--neutral-medium);
+    line-height: 30px;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 70px;
+    }
+}
+
+/* HELPERS ______________________________ */
+.container {
+    max-width: var(--max-content);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .container {
+        text-align: unset;
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .desktop-only {
+        display: block;
+    }
+}
+
+/* BUTTONS ______________________________ */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--neutral-medium);
+    background-color: transparent;
+    min-width: 6.5rem;
+    height: 2.6rem;
+    border: none;
+    font-family: var(--font-family);
+    font-size: .85rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+@media (min-width: 520px) {
+    .btn {
+        min-width: 7.5rem;
+    }
+}
