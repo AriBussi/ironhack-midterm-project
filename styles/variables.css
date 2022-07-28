@@ -12,4 +12,7 @@
     /* Layout */
     --max-content: 1100px;
 
+    /* Shadows */
+    --shadow: 0 35px 75px rgba(0, 0, 0, 0.1);
+
 }

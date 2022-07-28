@@ -50,6 +50,12 @@ nav a:active {
     }
 }
 
+@media (min-width: 800px) {
+    .navigation .container {
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 1110px) {
     #logo,
     .navigation {
@@ -81,7 +87,7 @@ nav a:active {
     max-width: 9.5rem;
     position: absolute;
     border-radius: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 .hero-card-1 {
@@ -144,8 +150,66 @@ nav a:active {
     }
 }
 
-/* 
-+++ TODO
-- BTNS HOVER STATE
-- SLIDER ON CLIENT SECTION
-*/
+/* PROJECTS SECTION ______________________________ */
+.projects-section  h2 {
+    align-self: flex-start;
+    text-align: start;
+}
+
+/* .cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+} */
+
+.card {
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    width: 17rem;
+    height: 22rem;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.card:last-of-type {
+    margin-right: 0;
+}
+
+.project-image {
+    height: 12rem;
+    background-size: cover;
+}
+
+.simplify-project {
+    background-image: url('../assets/projects-section/1.jpg');
+}
+.dashcoin-project {
+    background-image: url('../assets/projects-section/2.jpg');
+}
+.vectorify-project {
+    background-image: url('../assets/projects-section/3.jpg');
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info p {
+    margin-top: .5rem;
+    font-size: .85rem;
+}
+
+.project-info a {
+    color: var(--primary);
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width: 800px) {
+    .project-info a {
+        left: 1.5rem;
+        transform: none;
+    }
+}
