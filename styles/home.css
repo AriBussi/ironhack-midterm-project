@@ -19,7 +19,7 @@
     .navigation{
         height: 6rem;
         position: sticky;
-        top: -34px;
+        top: -48px;
     }
 }
 
@@ -58,10 +58,6 @@ nav a:active {
 }
 
 /* HERO ______________________________ */
-/* .hero-info {
-    margin-top: 140px;
-} */
-
 .hero-info p {
     margin: 2rem 0;
 }
@@ -119,9 +115,37 @@ nav a:active {
     }
 }
 
+/* CLIENT SECTION ______________________________ */
+.client-section {
+    margin: 3.5rem 0;
+}
+
+.client-section .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.client-section img {
+    padding: 1.5rem;
+    filter: grayscale(1);
+
+}
+
+.client-section img:hover {
+    padding: 1.5rem;
+    filter: none;
+}
+
+@media (min-width: 800px) {
+    .client-section {
+        margin: 7rem 0;   
+    }
+}
+
 /* 
 +++ TODO
-- UNIFIY MEDIA QUERIES 
 - BTNS HOVER STATE
-- HERO IMAGE ON MOBILE
+- SLIDER ON CLIENT SECTION
 */

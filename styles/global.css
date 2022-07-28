@@ -1,8 +1,11 @@
+html {
+    font-size: 20px;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: var(--font-family);
-    font-size: 20px;
     background-color: var(--neutral-light);
     height: 200vh; /* To be removed when body has content */
 }
@@ -19,7 +22,7 @@ h1, p {
 h1 {
     color: var(--neutral-dark);
     font-size: 2.2rem;
-    line-height: 40px;
+    line-height: 45px;
 }
 
 p {
@@ -86,6 +89,6 @@ p {
 
 @media (min-width: 520px) {
     .btn {
-        min-width: 7.5rem;
+        min-width: 6rem;
     }
 }
