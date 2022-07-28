@@ -1,0 +1,15 @@
+:root {
+    /* Colors */
+    --primary: #072AC8;
+    --neutral-dark: #292E47;
+    --neutral-medium: #6B708D;
+    --neutral-light: #E5E5E5;
+    --white: #fff;
+    
+    /* Fonts */
+    --font-family: Roboto, sans-serif;
+
+    /* Layout */
+    --max-content: 1100px;
+
+}

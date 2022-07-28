@@ -1,3 +1,208 @@
-h1 {
-    color: magenta;
+/* GLOBAL ______________________________ */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color: var(--neutral-light);
+    height: 200vh; /* To be removed when body has content */
 }
+
+a {
+    text-decoration: none;
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    color: var(--neutral-dark);
+    font-size: 2.6rem;
+    line-height: 70px;
+}
+
+p {
+    color: var(--neutral-medium);
+    line-height: 30px;
+}
+
+.container {
+    max-width: var(--max-content);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 520px) {
+    .container {
+        flex-direction: row;
+        padding: 0;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        text-align: unset;
+    }
+}
+
+@media (min-width: 1100px) {
+    .desktop-only {
+        display: block;
+    }
+}
+
+/* BUTTONS ______________________________ */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    min-width: 6.5rem;
+    height: 2.6rem;
+    border: none;
+    font-family: var(--font-family);
+    font-size: .85rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+@media (min-width: 520px) {
+    .btn {
+        min-width: 7.5rem;
+    }
+}
+
+/* NAVIGATION ______________________________ */
+.navigation {
+    background-color: var(--neutral-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navigation .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 520px) {
+    .navigation{
+        height: 6rem;
+        position: sticky;
+        top: -34px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a {
+    color: var(--neutral-medium);
+    padding: .75rem 1.5rem;
+    font-size: .85rem;
+}
+
+nav a:hover,
+nav a:active {
+    color: var(--primary);
+}
+
+#logo {
+    max-width: 3rem;
+    padding-top: .5rem;
+} 
+
+@media (min-width: 520px) {
+    #logo {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1110px) {
+    #logo,
+    .navigation {
+        padding: 0;
+    }
+}
+
+/* HERO ______________________________ */
+.hero-info {
+    margin-top: 140px;
+}
+
+.hero-info p {
+    margin: 2rem 0;
+}
+
+.hero-info .btn {
+    margin: .4rem .8rem .4rem 0;
+}
+
+.hero-image {
+    background-image: url(../assets/hero-section/hero-image.png);
+    min-height: 31.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.hero-card {
+    max-width: 9.5rem;
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card-1 {
+    top: 1.5rem;
+    left: -.5rem;
+}
+
+.hero-card-2 {
+    right: 0;
+    bottom: .5rem;
+}
+
+@media (min-width: 800px) {
+    .hero-image,
+    .hero-info{
+        width: 50%;
+    }
+
+    .hero-info {
+        margin-top: 0;
+    }
+}
+
+/* 
++++ TODO
+- UNIFIY MEDIA QUERIES 
+- BTNS HOVER STATE
+- HERO IMAGE ON MOBILE
+*/
