@@ -78,6 +78,10 @@ p {
     .desktop-only {
         display: block;
     }
+
+    .mobile-only {
+        display: none;   
+    }
 }
 
 /* BUTTONS ______________________________ */
