@@ -103,8 +103,9 @@ p {
     color: var(--white);
 }
 
-@media (min-width: 520px) {
+@media (max-width: 520px) {
     .btn {
-        min-width: 6rem;
+        min-width: 5.8rem;
+        height: 2.2rem;
     }
 }
