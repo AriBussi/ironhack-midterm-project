@@ -50,7 +50,13 @@ nav a:active {
     }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 800px) {
+    .navigation .container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1100px) {
     #logo,
     .navigation {
         padding: 0;
@@ -81,7 +87,7 @@ nav a:active {
     max-width: 9.5rem;
     position: absolute;
     border-radius: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-light);
 }
 
 .hero-card-1 {
@@ -144,8 +150,87 @@ nav a:active {
     }
 }
 
-/* 
-+++ TODO
-- BTNS HOVER STATE
-- SLIDER ON CLIENT SECTION
-*/
+/* PROJECTS SECTION ______________________________ */
+.projects-section  h2 {
+    align-self: flex-start;
+    text-align: start;
+    margin: 0 auto 1.3rem auto;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    width: 17rem;
+    height: 22rem;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.card:last-of-type {
+    margin-right: 0;
+}
+
+.project-image {
+    height: 12rem;
+    background-size: cover;
+}
+
+.simplify-project {
+    background-image: url('../assets/projects-section/1.jpg');
+}
+.dashcoin-project {
+    background-image: url('../assets/projects-section/2.jpg');
+}
+.vectorify-project {
+    background-image: url('../assets/projects-section/3.jpg');
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info p {
+    margin-top: .5rem;
+    font-size: .85rem;
+}
+
+.project-info a {
+    color: var(--primary);
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width: 800px) {
+    .project-info a {
+        left: 1.5rem;
+        transform: none;
+    }
+
+    .cards-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1100px) {
+    .cards-container {
+        justify-content: space-between;
+    }
+
+    .projects-section  h2 {
+        margin-left: 0;
+    }
+
+    .card {
+        transition: transform .2s ease-out;
+    }
+
+    .card:hover {
+        transform: translateY(-30px);
+        box-shadow: var(--shadow-strong);
+    }
+}
