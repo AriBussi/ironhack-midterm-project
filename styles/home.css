@@ -84,7 +84,7 @@ nav a:active {
     max-width: 9.5rem;
     position: absolute;
     border-radius: 30px;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--shadow-soft);
 }
 
 .hero-card-1 {
@@ -154,15 +154,11 @@ nav a:active {
 /* PROJECTS SECTION ______________________________ */
 .card {
     background-color: #fff;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--shadow-soft);
     width: 17rem;
     height: 22rem;
     margin: 1rem 0;
     position: relative;
-}
-
-.card:last-of-type {
-    margin-right: 0;
 }
 
 .project-image {
@@ -173,9 +169,11 @@ nav a:active {
 .simplify-project {
     background-image: url('../assets/projects-section/1.jpg');
 }
+
 .dashcoin-project {
     background-image: url('../assets/projects-section/2.jpg');
 }
+
 .vectorify-project {
     background-image: url('../assets/projects-section/3.jpg');
 }
