@@ -7,7 +7,6 @@ body {
     margin: 0;
     font-family: var(--font-family);
     background-color: var(--neutral-light);
-    height: 200vh; /* To be removed when body has content */
 }
 
 a {
