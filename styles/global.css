@@ -38,6 +38,12 @@ p {
     line-height: 30px;
 }
 
+.caption {
+    font-size: .65rem;
+    line-height: 15px;
+    color: var(--neutral-light);
+}
+
 @media (min-width: 800px) {
     h1 {
         font-size: 3rem;

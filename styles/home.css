@@ -153,7 +153,7 @@ nav a:active {
 
 /* PROJECTS SECTION ______________________________ */
 .card {
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: var(--shadow-soft);
     width: 17rem;
     height: 22rem;
@@ -227,3 +227,98 @@ nav a:active {
         box-shadow: var(--shadow-strong);
     }
 }
+
+/* TESTIMONIALS SECTION ______________________________ */
+.testimonials-section {
+    background-color: var(--neutral-dark);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin: 3rem auto;
+    position: relative;
+    max-width: 66rem;
+}
+
+.orbit {
+    background-image: url('../assets/testimonial-section/orbit.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.testimonials-section h2 {
+    color: var(--neutral-light);
+    margin: 0;
+}
+
+.testimonials-section > p {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin: 2.5rem auto;
+    max-width: 590px;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-image: url('../assets/testimonial-section/profile.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: .5rem;
+}
+
+.client-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.client-name {
+    color: var(--primary-hover);
+    display: block;
+    font-size: .85rem;
+}
+
+.memoji {
+    width: 150px;
+    position: absolute;
+}
+
+.memoji-1 {
+    left: 2rem;
+    top: 2rem;
+}
+
+.memoji-2 {
+    right: 2rem;
+    top: 2rem;
+}
+
+.memoji-3 {
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.memoji-4 {
+    right: 2rem;
+    bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    .testimonials-section {
+        padding: 4rem 0;
+    }
+}
+
+@media (min-width: 1100px) {
+    .testimonials-section {
+        margin: 10rem auto;
+        padding: 6rem 0;
+    }
+}
+
