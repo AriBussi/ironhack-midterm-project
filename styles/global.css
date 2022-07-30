@@ -44,6 +44,10 @@ p {
     color: var(--neutral-light);
 }
 
+.left-title {
+    align-self: flex-start;
+}
+
 @media (min-width: 800px) {
     h1 {
         font-size: 3rem;
