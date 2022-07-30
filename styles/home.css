@@ -44,20 +44,17 @@ nav a:active {
     padding-top: .5rem;
 } 
 
-@media (min-width: 520px) {
+@media (min-width: 800px) {
     #logo {
         padding-top: 0;
     }
-}
 
-@media (min-width: 800px) {
     .navigation .container {
         flex-direction: row;
     }
 }
 
 @media (min-width: 1100px) {
-    #logo,
     .navigation {
         padding: 0;
     }
@@ -134,29 +131,27 @@ nav a:active {
 }
 
 .client-section img {
-    padding: 1.5rem;
+    padding: 1rem;
     filter: grayscale(1);
-
-}
-
-.client-section img:hover {
-    padding: 1.5rem;
-    filter: none;
 }
 
 @media (min-width: 800px) {
     .client-section {
-        margin: 7rem 0;   
+        margin: 6rem 0;   
+    }
+
+    .client-section img:hover {
+        filter: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .client-section img {
+        padding: 1.5rem;
     }
 }
 
 /* PROJECTS SECTION ______________________________ */
-.projects-section  h2 {
-    align-self: flex-start;
-    text-align: start;
-    margin: 0 auto 1.3rem auto;
-}
-
 .card {
     background-color: #fff;
     box-shadow: var(--shadow-light);
@@ -222,7 +217,7 @@ nav a:active {
     }
 
     .projects-section  h2 {
-        margin-left: 0;
+        align-self: flex-start;
     }
 
     .card {
