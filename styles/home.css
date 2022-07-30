@@ -230,7 +230,7 @@ nav a:active {
     }
 
     .card:hover {
-        transform: translateY(-40px);
+        transform: translateY(-30px);
         box-shadow: var(--shadow-strong);
     }
 }
