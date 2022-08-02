@@ -311,20 +311,19 @@ footer {
 }
 
 .footer-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid: repeat(2, 4rem) / auto-flow;
+    justify-content: space-between;
+    max-width: 22rem;
     margin-top: 2rem;
+}
+
+.footer-nav a {
+    padding: .8rem;
 }
 
 @media (min-width: 800px) {
     footer {
         margin-bottom: 5rem;
-    }
-
-    .footer-nav {
-        justify-content: flex-start;
-        height: 5.6rem;
-        max-width: 22rem;
     }
 }
