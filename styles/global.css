@@ -127,6 +127,10 @@ input::placeholder {
         padding: 0 1rem;
     }
 
+    .row-container {
+        flex-direction: row;
+    }
+
     .overflow {
         padding: 4rem 0;
     }
@@ -213,17 +217,13 @@ nav a:active {
     color: var(--primary);
 }
 
-#logo {
+#main-logo {
     padding-top: .5rem;
 } 
 
 @media (min-width: 800px) {
-    #logo {
+    #main-logo {
         padding-top: 0;
-    }
-
-    .navigation .container {
-        flex-direction: row;
     }
 }
 
