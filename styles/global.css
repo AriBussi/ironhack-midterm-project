@@ -135,16 +135,14 @@ p {
     font-size: .85rem;
 }
 
+.btn-large {
+    height: 4rem;
+    min-width: 9.9rem
+}
+
 .btn-primary {
     background-color: var(--primary);
     color: var(--white);
-}
-
-@media (max-width: 520px) {
-    .btn {
-        min-width: 5.8rem;
-        height: 2.2rem;
-    }
 }
 
 /* NAVIGATION ______________________________ */
