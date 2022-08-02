@@ -60,6 +60,32 @@ p {
     }
 }
 
+/* FORMS ______________________________ */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    font-size: .85rem;
+    color: var(--neutral-medium);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input::placeholder {
+    color: var(--neutral-dark);
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    form {
+        flex-direction: column;
+    }
+}
+
 /* HELPERS ______________________________ */
 .container {
     max-width: var(--max-content);

@@ -202,15 +202,28 @@
 
 .cta-section > p {
     color: var(--neutral-dark);
-    font-size: 1.5rem;
     margin: 1rem auto 2.5rem auto;
 }
 
-input {
-    max-width: 395px;
+.email-input-container {
+    position: relative;
+    max-width: 19.5rem;
+    flex-grow: 1;
+}
+
+.email-input-container::before {
+    content: '';
+    position: absolute;
+    height: 1.5rem;
+    top: 1.25rem;
+    left: 1.5rem;
+    width: 1.5rem;
+    background-image: url('../assets/newsletter/icon/mail.svg');
+}
+
+.email-input {
+    padding-left: 3.5rem;
+    height: 4rem;
     border: 1px solid var(--white);
-    padding: 1.3rem 0 1.3rem 3.5rem;
-    font-size: .85rem;
-    color: var(--neutral-dark)
 }
 
