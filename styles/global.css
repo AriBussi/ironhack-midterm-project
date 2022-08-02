@@ -129,6 +129,7 @@ input::placeholder {
 
     .row-container {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .overflow {
@@ -295,5 +296,35 @@ nav a:active {
     .card:hover {
         transform: translateY(-30px);
         box-shadow: var(--shadow-strong);
+    }
+}
+
+/* FOOTER ______________________________ */
+footer {
+    font-size: .85rem;
+    margin: 1.5rem 0;
+}
+
+#footer-logo img {
+    height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 800px) {
+    footer {
+        margin-bottom: 5rem;
+    }
+
+    .footer-nav {
+        justify-content: flex-start;
+        height: 5.6rem;
+        max-width: 22rem;
     }
 }
