@@ -1,0 +1,47 @@
+/* CTA SECTION ______________________________ */
+.cta-section {
+    background-color: var(--secondary);
+}
+
+.cta-section form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-section > p {
+    color: var(--neutral-dark);
+    margin: 1rem auto 2.5rem auto;
+}
+
+.email-input-container {
+    position: relative;
+    width: 19.5rem;
+}
+
+.email-input-container::before {
+    content: '';
+    position: absolute;
+    height: 1.5rem;
+    top: 1.25rem;
+    left: 1.5rem;
+    width: 1.5rem;
+    background-image: url('../assets/newsletter/icon/mail.svg');
+}
+
+.email-input {
+    padding-left: 3.5rem;
+    height: 4rem;
+    border: 1px solid var(--white);
+}
+
+.email-input::placeholder {
+    color: var(--neutral-dark);
+}
+
+@media (max-width: 520px) {
+    .cta-section form {
+        flex-direction: column;
+    }
+}
