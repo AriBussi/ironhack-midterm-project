@@ -1,3 +1,9 @@
+@media (min-width: 800px) {
+    main.startpage {
+        padding-top: 5rem;
+    }
+}
+
 /* HERO ______________________________ */
 .hero-info p {
     margin: 2rem 0;
@@ -15,7 +21,7 @@
     position: relative;
     min-height: 150px;
     min-width: 150px;
-    margin: 8.5rem auto 1rem auto;
+    margin: 1rem auto;
 }
 
 .hero-card {
@@ -200,6 +206,13 @@
     background-color: var(--secondary);
 }
 
+.cta-section form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .cta-section > p {
     color: var(--neutral-dark);
     margin: 1rem auto 2.5rem auto;
@@ -207,8 +220,7 @@
 
 .email-input-container {
     position: relative;
-    max-width: 19.5rem;
-    flex-grow: 1;
+    width: 19.5rem;
 }
 
 .email-input-container::before {
@@ -225,5 +237,15 @@
     padding-left: 3.5rem;
     height: 4rem;
     border: 1px solid var(--white);
+}
+
+.email-input::placeholder {
+    color: var(--neutral-dark);
+}
+
+@media (max-width: 520px) {
+    .cta-section form {
+        flex-direction: column;
+    }
 }
 
