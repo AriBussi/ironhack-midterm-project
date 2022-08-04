@@ -1,0 +1,28 @@
+.detail p {
+    margin-bottom: 1rem;
+}
+
+.detail-header {
+    width: 100%;
+}
+
+.detail-image {
+    width: 100%;
+    height: 22.2rem;
+    background-image: url(../assets/projects-section/1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 4rem auto;
+}
+
+.detail-info {
+    margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+    .detail-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

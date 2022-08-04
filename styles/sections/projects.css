@@ -5,13 +5,13 @@
 }
 
 .simplify-project {
-    background-image: url('../assets/projects-section/1.jpg');
+    background-image: url('../../assets/projects-section/1.jpg');
 }
 
 .dashcoin-project {
-    background-image: url('../assets/projects-section/2.jpg');
+    background-image: url('../../assets/projects-section/2.jpg');
 }
 
 .vectorify-project {
-    background-image: url('../assets/projects-section/3.jpg');
+    background-image: url('../../assets/projects-section/3.jpg');
 }

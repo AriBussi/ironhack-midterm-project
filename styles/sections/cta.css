@@ -27,7 +27,7 @@
     top: 1.25rem;
     left: 1.5rem;
     width: 1.5rem;
-    background-image: url('../assets/newsletter/icon/mail.svg');
+    background-image: url('../../assets/newsletter/icon/mail.svg');
 }
 
 .email-input {
@@ -43,5 +43,10 @@
 @media (max-width: 520px) {
     .cta-section form {
         flex-direction: column;
+    }
+
+    .email-input-container {
+        position: relative;
+        width: 16rem;
     }
 }
