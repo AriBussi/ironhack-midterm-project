@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+main {
+    padding-top: 7rem;
+}
+
 /* TYPOGRAPHIES ______________________________ */
 h1, h3, p {
     margin: 0;
@@ -61,31 +65,31 @@ p {
 }
 
 /* FORMS ______________________________ */
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-input {
+input, textarea {
     font-size: .85rem;
     color: var(--neutral-medium);
     box-sizing: border-box;
     width: 100%;
+    font-family: var(--font-family);
+    padding-left: 1rem;
+    box-sizing: border-box;
 }
 
-input::placeholder {
-    color: var(--neutral-dark);
+textarea {
+    padding-top: 1.1rem;
+    min-height: 10rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--neutral-medium);
     opacity: 1;
 }
 
-@media (max-width: 640px) {
-    form {
-        flex-direction: column;
-    }
+label {
+    display: block;
+    margin-bottom: .5rem;
 }
-
 /* HELPERS ______________________________ */
 .container {
     max-width: var(--max-content);
@@ -209,7 +213,7 @@ nav {
 
 nav a {
     color: var(--neutral-medium);
-    padding: .75rem 1.5rem;
+    padding: .75rem .5rem .75rem 1.5rem;
     font-size: .85rem;
 }
 
@@ -225,6 +229,10 @@ nav a:active {
 @media (min-width: 800px) {
     #main-logo {
         padding-top: 0;
+    }
+
+    nav a {
+        padding: .75rem 1.5rem;
     }
 }
 
