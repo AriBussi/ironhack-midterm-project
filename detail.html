@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari Bussi - Ironhack mid term project</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/sections/cta.css">
+    <link rel="stylesheet" href="styles/sections/projects.css">
+    <script type="module" src="./scripts/sections/detail.js" defer></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="container row-container">
+            <a href='/' id="main-logo">
+                <img src="./assets/logos/circle.svg" alt="Circle logo">
+            </a>
+    
+            <nav>
+                <a href="/">Home</a>
+                <a href="/">Projects</a>
+                <a href="/">Services</a>
+            </nav>
+        
+            <a href="./contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+
+    <main>
+        <article class="detail container">
+            <header class="detail-header">
+                <h1 class="left-title detail-title">Simplify</h1>
+                <div>
+                    <p class="detail-area">UI Design & App Development</p>
+                    <p class="detail-date">Completed on <span>June 22, 2021</span></p>        
+                </div>
+                <div class="detail-image"></div>
+            </header>
+            
+            <div class="detail-description">
+            </div>    
+        </article>
+
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="left-title desktop-only">Other <br>Projects</h2>
+                <h2 class="mobile-only">Other Projects</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="project-image simplify-project"></div>
+                        <div class="card-info">
+                            <h3>Simplify</h3>
+                            <p>UI Design & App Development</p>
+                            <a href="/detail.html?project=simplify">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="project-image dashcoin-project"></div>
+                        <div class="card-info">
+                            <h3>Dashcoin</h3>
+                            <p>Web Development</p>
+                            <a href="/detail.html?&project=dashcoin">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="project-image vectorify-project"></div>
+                        <div class="card-info">
+                            <h3>Vectorify</h3>
+                            <p>User Experience Design</p>
+                            <a href="/detail.html?&project=vectorify">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section  overflow">
+            <h2>Do you have any questions?</h2>
+            <p>Let us help you!</p>
+            <form action="submit">
+                <label class="visually-hidden" for="email">Email</label>
+                <div class="email-input-container">
+                    <input class="email-input" type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <button class="btn btn-primary btn-large" type="submit">Subscribe</button>
+            </form>
+        </section>
+      
+    </main>
+
+    <footer>
+        <div class="container row-container">
+            <div>
+                <a href='/' id="footer-logo">
+                    <img src="./assets/logos/circle.svg" alt="Circle logo">
+                </a>
+                <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </p>
+            </div>
+    
+            <nav class="footer-nav">
+                <a href="/">Team</a>
+                <a href="/">Services</a>
+                <a href="/">About Us</a>
+                <a href="/">Press</a>
+                <a href="/">Projects</a>
+                <a href="/">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+ 
