@@ -14,4 +14,16 @@
 
 .vectorify-project {
     background-image: url('../../assets/projects-section/3.jpg');
+
+}
+.orbit-project {
+    background-image: url('../../assets/projects-section/4.jpg');
+}
+
+.purify-project {
+    background-image: url('../../assets/projects-section/5.jpg');
+}
+
+.cryptopie-project {
+    background-image: url('../../assets/projects-section/6.jpg');
 }
