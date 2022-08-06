@@ -249,9 +249,9 @@ nav a:active {
 
 @media (min-width: 800px) {
     .navigation{
-        height: 6rem;
+        height: var(--nav-height);
         position: sticky;
-        top: -48px;
+        top: -2.4rem /* substract navigation container's height */
     }
 
     .scroll-anchor {
