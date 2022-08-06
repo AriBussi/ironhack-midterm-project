@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/sections/cta.css">
     <link rel="stylesheet" href="styles/sections/projects.css">
     <script type="module" src="./scripts/sections/detail.js" defer></script>
+    <script type="module" src="./scripts/sections/projects.js" defer></script>
 </head>
 <body>
     <div class="navigation">
@@ -32,6 +33,7 @@
     <main>
         <article class="detail container">
             <header class="detail-header">
+                <!-- populated by detail.js -->
                 <h1 class="left-title detail-title">Simplify</h1>
                 <div>
                     <p class="detail-area">UI Design & App Development</p>
@@ -49,30 +51,7 @@
                 <h2 class="left-title desktop-only">Other <br>Projects</h2>
                 <h2 class="mobile-only">Other Projects</h2>
                 <div class="cards-container">
-                    <div class="card">
-                        <div class="project-image simplify-project"></div>
-                        <div class="card-info">
-                            <h3>Simplify</h3>
-                            <p>UI Design & App Development</p>
-                            <a href="/detail.html?project=simplify">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="project-image dashcoin-project"></div>
-                        <div class="card-info">
-                            <h3>Dashcoin</h3>
-                            <p>Web Development</p>
-                            <a href="/detail.html?&project=dashcoin">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="project-image vectorify-project"></div>
-                        <div class="card-info">
-                            <h3>Vectorify</h3>
-                            <p>User Experience Design</p>
-                            <a href="/detail.html?&project=vectorify">Learn more</a>
-                        </div>
-                    </div>
+                    <!-- populated by projects.js -->
                 </div>
             </div>
         </section>
