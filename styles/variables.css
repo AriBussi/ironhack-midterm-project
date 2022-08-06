@@ -1,6 +1,12 @@
 :root {
     /* Colors */
     --primary: #072AC8;
+    --primary-hover: #A2D6F9;
+    --secondary: #FFC600;
+
+    --neutral-lightblue: #ECF7FF;
+
+
     --neutral-dark: #292E47;
     --neutral-medium: #6B708D;
     --neutral-light: #E5E5E5;
@@ -10,6 +16,11 @@
     --font-family: Roboto, sans-serif;
 
     /* Layout */
-    --max-content: 1100px;
+    --max-content: 55.5rem;
+    --overflow-content: 66rem;
+
+    /* Shadows */
+    --shadow-soft: 0 35px 75px rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 65px 35px 10px rgba(0, 0, 0, 0.1);
 
 }

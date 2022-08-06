@@ -1,0 +1,47 @@
+.contact-form {
+    width: 100%;
+}
+
+.contact-form form {
+    margin: 2rem auto 4rem auto;
+}
+
+.contact-form input {
+    height: 3.5rem;
+    clear: both;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #6B708D1A;
+    border: none;
+}
+
+.contact-form .btn {
+    width: 100%;
+}
+
+.input-container {
+    text-align: left;
+    color: var(--neutral-medium);
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 800px) {
+    .contact-form form {
+        margin: 4rem auto 7rem auto;
+    }
+
+    .input-half {
+        width: 50%;
+        float: left;
+    }
+    
+    .first-half {
+        padding-right: 1rem;
+    }
+}
+
+
+
