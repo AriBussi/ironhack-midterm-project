@@ -1,7 +1,7 @@
 import { getProjectsPreview } from '../availableProjects.js';
 
 const projectsPreview = getProjectsPreview();
-const cardsContainer = document.querySelector('.projects-section .cards-container');
+const cardsContainer = document.querySelector('#projects-section .cards-container');
 
 const createCard = (project) => {
     const formattedTitle = (project.title).toLowerCase();

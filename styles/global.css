@@ -1,5 +1,6 @@
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -189,6 +190,7 @@ label {
 /* NAVIGATION ______________________________ */
 .navigation {
     background-color: var(--neutral-light);
+    height: var(--mobile-nav-height);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -201,14 +203,6 @@ label {
 .navigation .container {
     padding-top: .5rem;
     padding-bottom: .5rem;
-}
-
-@media (min-width: 800px) {
-    .navigation{
-        height: 6rem;
-        position: sticky;
-        top: -48px;
-    }
 }
 
 nav {
@@ -232,6 +226,11 @@ nav a:active {
     padding-top: .5rem;
 } 
 
+.scroll-anchor {
+    padding-top: var(--mobile-nav-height);
+    margin-top: calc(var(--mobile-nav-height) * -1);
+}
+
 @media (min-width: 800px) {
     #main-logo {
         padding-top: 0;
@@ -245,6 +244,19 @@ nav a:active {
 @media (min-width: 1100px) {
     .navigation {
         padding: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .navigation{
+        height: var(--nav-height);
+        position: sticky;
+        top: -2.4rem /* substract navigation container's height */
+    }
+
+    .scroll-anchor {
+        padding-top: var(--nav-height);
+        margin-top: calc(var(--nav-height) * -1);
     }
 }
 
