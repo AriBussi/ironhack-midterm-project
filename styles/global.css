@@ -72,7 +72,8 @@ p {
 }
 
 /* FORMS ______________________________ */
-input, textarea {
+input, 
+textarea {
     font-size: .85rem;
     color: var(--neutral-medium);
     box-sizing: border-box;
@@ -97,6 +98,7 @@ label {
     display: block;
     margin-bottom: .5rem;
 }
+
 /* HELPERS ______________________________ */
 .container {
     max-width: var(--max-content);
@@ -111,7 +113,7 @@ label {
 }
 
 .overflow {
-    max-width: var(--overflow-content);
+    max-width: var(--max-overflow-content);
     text-align: center;
     padding: 2.5rem 1rem;
     margin: 3rem auto;
