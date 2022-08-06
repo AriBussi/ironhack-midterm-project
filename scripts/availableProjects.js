@@ -1,3 +1,21 @@
+export const getProjectsPreview = () => {
+    const projectsNames = Object.keys(availableProjects);
+    const getRandomIndex = () => Math.floor(Math.random() * projectsNames.length);
+
+    const projectsPreview = [];
+
+    while (projectsPreview.length < 3) {
+        const randomProject = projectsNames[getRandomIndex()];
+        const pickedProject = availableProjects[randomProject];
+        
+        if (!projectsPreview.includes(pickedProject)) {    
+            projectsPreview.push(pickedProject);
+        }        
+    }
+
+    return projectsPreview;
+};
+
 export const availableProjects = {
     simplify: {
         title: 'Simplify',
@@ -45,3 +63,4 @@ export const availableProjects = {
         ]
     }
 };
+
