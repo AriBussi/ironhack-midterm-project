@@ -13,7 +13,7 @@ detailTitle.textContent = selectedProject.title;
 const detailArea = document.querySelector('.detail-area');
 detailArea.textContent = selectedProject.area;
 
-const detailDate = document.querySelector('.detail-date');
+const detailDate = document.querySelector('.detail-date span');
 detailDate.textContent = selectedProject.completedDate;
 
 const detailImage = document.querySelector('.detail-image');

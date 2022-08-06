@@ -10,6 +10,18 @@
     margin-bottom: 1rem;
 }
 
+.detail-area {
+    font-size: 1.2rem;
+}
+
+.detail-date {
+    color: var(--neutral-dark);
+}
+
+.detail-date span {
+    color: var(--neutral-medium);
+}
+
 .detail-image {
     width: 100%;
     height: 22.2rem;
@@ -17,6 +29,7 @@
     background-size: cover;
     background-position: center;
     margin: 4rem auto;
+    box-shadow: var(--shadow-soft);
 }
 
 .detail-description p {
