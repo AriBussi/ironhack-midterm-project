@@ -42,6 +42,10 @@
 }
 
 @media (min-width: 800px) {
+    .home-main {
+        padding-top: 100px;
+    }
+
     .hero .container {
         flex-direction: row-reverse;
     }

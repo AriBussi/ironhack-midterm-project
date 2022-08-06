@@ -1,9 +1,13 @@
-.detail p {
-    margin-bottom: 1rem;
-}
-
 .detail-header {
     width: 100%;
+}
+
+.detail-header > div {
+    min-height: 1.5rem;
+}
+
+.detail-title {
+    margin-bottom: 1rem;
 }
 
 .detail-image {
@@ -15,14 +19,18 @@
     margin: 4rem auto;
 }
 
-.detail-info {
-    margin-top: 1rem;
+.detail-description p {
+    margin-bottom: 1rem;
 }
 
+
 @media (min-width: 800px) {
-    .detail-info {
-        display: flex;
-        justify-content: space-between;
+    .detail-area {
+        float: left;
+    }
+
+    .detail-date {
+        float: right;
     }
 }
 
