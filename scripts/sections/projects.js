@@ -11,6 +11,7 @@ const createCard = (project) => {
 
     const cardImage = document.createElement('div');
     cardImage.className = `project-image ${formattedTitle}-project`;
+    cardImage.style.backgroundImage = `url('../../assets/projects-section/${project.backgroundImage}')`
     
     const cardInfo = document.createElement('div');
     cardInfo.className = 'card-info';

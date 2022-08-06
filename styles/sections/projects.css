@@ -3,27 +3,3 @@
     height: 12rem;
     background-size: cover;
 }
-
-.simplify-project {
-    background-image: url('../../assets/projects-section/1.jpg');
-}
-
-.dashcoin-project {
-    background-image: url('../../assets/projects-section/2.jpg');
-}
-
-.vectorify-project {
-    background-image: url('../../assets/projects-section/3.jpg');
-
-}
-.orbit-project {
-    background-image: url('../../assets/projects-section/4.jpg');
-}
-
-.purify-project {
-    background-image: url('../../assets/projects-section/5.jpg');
-}
-
-.cryptopie-project {
-    background-image: url('../../assets/projects-section/6.jpg');
-}

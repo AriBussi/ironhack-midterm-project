@@ -20,7 +20,7 @@ export const availableProjects = {
     simplify: {
         title: 'Simplify',
         completedDate: 'June 22, 2021',
-        backgroundImage: '../../assets/projects-section/1.jpg',
+        backgroundImage: '1.jpg',
         area: 'UI Design & App Development',
         description: [
             `Eum repudiandae culpa perferendis saepe nihil consectetur sapiente, porro ducimus ipsum dolorum, debitis amet magni accusantium quod exercitationem alias expedita sit earum!
@@ -34,8 +34,8 @@ export const availableProjects = {
     },
     dashcoin: {
         title: 'Dashcoin',
-        completedDate: 'December 2, 2021',
-        backgroundImage: '../../assets/projects-section/2.jpg',
+        completedDate: 'December 2, 2020',
+        backgroundImage: '2.jpg',
         area: 'Web Development',
         description: [
             `Obcaecati qui excepturi expedita voluptates corrupti facilis ex, ullam quibusdam. In hic perspiciatis inventore exercitationem voluptate maxime officia, totam dignissimos ratione sapiente!
@@ -51,7 +51,7 @@ export const availableProjects = {
     vectorify: {
         title: 'Vectorify',
         completedDate: 'August 7, 2021',
-        backgroundImage: '../../assets/projects-section/3.jpg',
+        backgroundImage: '3.jpg',
         area: 'User Experience Design',
         description: [
             `Blanditiis architecto soluta odit itaque eaque, aliquam numquam, libero a praesentium fugit explicabo iste ipsam inventore rem beatae quod, non illum nam.
@@ -64,8 +64,8 @@ export const availableProjects = {
     },
     orbit: {
         title: 'Orbit',
-        completedDate: 'March 4, 2017',
-        backgroundImage: '../../assets/projects-section/4.jpg',
+        completedDate: 'March 4, 2019',
+        backgroundImage: '4.jpg',
         area: 'UI Design',
         description: [
             `Reiciendis velit reprehenderit libero culpa voluptatibus sint nulla, repellat non numquam repellendus nihil quo. Unde ex praesentium rem officiis? Quo cum soluta autem ducimus modi ad aperiam et nam reiciendis?
@@ -80,7 +80,7 @@ export const availableProjects = {
     purify: {
         title: 'Purify',
         completedDate: 'July 2, 2020',
-        backgroundImage: '../../assets/projects-section/5.jpg',
+        backgroundImage: '5.jpg',
         area: 'UI/UX Design',
         description: [
             `Modi nesciunt illo dignissimos, eaque, eligendi corporis aperiam accusamus ducimus necessitatibus, tempore facilis optio cumque fuga quo earum praesentium maxime! Dicta sint iste eaque necessitatibus perspiciatis magni quidem officia cumque?
@@ -96,7 +96,7 @@ export const availableProjects = {
     cryptoPie: {
         title: 'CryptoPie',
         completedDate: 'August 9, 2022',
-        backgroundImage: '../../assets/projects-section/6.jpg',
+        backgroundImage: '6.jpg',
         area: 'App Development',
         description: [
             `Pariatur, quae temporibus vel magnam ipsam repellendus ut molestias hic fuga! Fugit ad cum accusamus exercitationem et eaque ducimus error in! Placeat doloribus harum amet quia illum repudiandae, culpa accusamus.
