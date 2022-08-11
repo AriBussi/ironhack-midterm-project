@@ -177,6 +177,7 @@ label {
     border: none;
     font-family: var(--font-family);
     font-size: .85rem;
+    transition: background-color .4s ease;
 }
 
 .btn-large {
@@ -189,6 +190,13 @@ label {
     color: var(--white);
 }
 
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--neutral-dark);
+}
 /* NAVIGATION ______________________________ */
 .navigation {
     background-color: var(--neutral-light);

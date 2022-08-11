@@ -1,12 +1,9 @@
 :root {
     /* Colors */
     --primary: #072AC8;
-    --primary-hover: #A2D6F9;
     --secondary: #FFC600;
-
     --neutral-lightblue: #ECF7FF;
-
-
+    --neutral-skyblue: #A2D6F9;
     --neutral-dark: #292E47;
     --neutral-medium: #6B708D;
     --neutral-light: #E5E5E5;
