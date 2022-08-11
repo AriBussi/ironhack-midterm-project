@@ -1,4 +1,8 @@
 /* PROJECTS SECTION ______________________________ */
+#projects-section {
+    min-height: 645px;
+}
+
 .project-image {
     height: 12rem;
     background-size: cover;
