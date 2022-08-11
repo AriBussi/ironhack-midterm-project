@@ -18,7 +18,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
     detailDate.textContent = selectedProject.completedDate;
 
     const detailImage = document.querySelector('.detail-image');
-    detailImage.style.backgroundImage = `url(${selectedProject.backgroundImage})`
+    detailImage.style.backgroundImage = `url(../assets/projects-section/${selectedProject.backgroundImage})`
 
     const detailDescription = document.querySelector('.detail-description');
     selectedProject.description.forEach(paragraph => {
